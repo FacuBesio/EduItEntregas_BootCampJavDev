@@ -1,0 +1,210 @@
+/*--------------------- GOOGLE FONTS ---------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:wght@400;700&display=swap');
+
+/*--------------------- GENERALES ---------------------*/
+* {
+    box-sizing: border-box;
+}
+.encolumnar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 30px;
+    *background-color: aqua;
+}
+.encolumnar section {
+    width: 47%;
+}
+
+#contactos.encolumnar{
+    border-bottom: 0.5px solid gray;
+    *background-color: aqua;
+}
+
+#servicios.encolumnar{
+    border-bottom: 0.5px solid gray;
+    *background-color:aquamarine;
+}
+
+/*--------------------- BODY ---------------------*/
+body {
+    color: #333;
+    font: 400;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*--------------------- HEADER ---------------------*/
+header, main, aside, footer {
+    width: 100%;
+}
+header h1 {
+    font-size: 41px;
+    font-weight: 700;
+}
+header img {
+    width: 70%;
+    margin-left: 30%;
+}
+header.encolumnar {
+    border-bottom: none;
+}
+.grande {
+    font-size: 80px;
+    font-family: 'Coiny', cursive;
+}
+
+
+
+/*--------------------- MAIN ---------------------*/
+main {
+    font-size: 21px;
+}
+
+/*--------------------- TITLES ---------------------*/
+h1,h2,h3, .item{ 
+    color: black;
+}
+
+h2,h3 {
+    font-size: 20px;
+    background-color: #FCEE21;
+    display: inline;   
+}
+
+h1 {
+    font-family: 'Coiny', cursive;
+
+}
+
+h2 {
+    font-weight: none;
+}
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    display: inline; 
+    margin: 0;
+    padding: 10px;
+    font-size: 51px;
+    color: white;
+    background-color: black;
+    line-height: 100px;  
+}
+
+/*--------------------- LISTAS ---------------------*/
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ol li {
+    margin-bottom: 6%;
+}
+
+/*--------------------- NAVBAR ---------------------*/
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+nav h1 {
+    font-family: 'Coiny', cursive;
+    margin-right: auto;
+}
+nav a {
+    margin-left: 20px;
+    color: #7A7A7A;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*--------------------- SERVICIOS ---------------------*/
+.services img {
+    width: 100%;
+}
+.item {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #FCEE21;
+}
+#titulo{
+    font-size: 40px;
+}
+#imagen {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+/*--------------------- SPAN ---------------------*/
+span {
+    color: red;
+}
+
+/*--------------------- FORMULARIO ---------------------*/
+form {
+    margin: auto;
+    width: 100%;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input {
+    height: 40px;
+    margin-bottom: 8px;
+}
+input, textarea {
+    width: 100%;
+}
+.boton {
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+}
+
+/*--------------------- ASIDE ---------------------*/
+aside {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+aside a img {
+    text-align: center;
+    height: auto;
+    width: 50%;
+}
+aside.encolumnar {
+    border-bottom: none;
+}
+
+/*--------------------- FOOTER ---------------------*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding: 10px;
+    background-color: #FCEE21;
+}
+
+footer h1 {
+    font-family: 'Coiny', cursive;
+    font-size: 33px;
+}
+footer a {
+    margin-left: 20px;
+    color: #7A7A7A;
+    text-decoration: none;
+}
