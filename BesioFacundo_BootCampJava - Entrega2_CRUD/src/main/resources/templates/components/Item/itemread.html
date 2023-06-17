@@ -1,0 +1,10 @@
+<div th:fragment="itemreadcontainer">
+    <div class="container">
+        <!-- Page Heading/Breadcrumbs -->
+        <h1 class="mt-4 mb-3"> Spring eCommerce <small>Productos</small></h1>
+        <div th:insert="~{components/Breadcrumbs/itemread.html :: breadcrumb}"></div>
+        <a class="btn btn-primary" th:href="@{/administrador/productos/create}">Crear Producto</a>
+        <h2>Productos</h2>
+        <div th:insert="~{components/Tables/itemread.html :: table}"></div>
+    </div>
+</div>

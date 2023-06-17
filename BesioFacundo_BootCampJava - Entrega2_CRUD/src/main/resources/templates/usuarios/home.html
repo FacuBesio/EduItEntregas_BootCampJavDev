@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="https://www.thymeleaf.org">
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta name="description" content="">
+  	<meta name="author" content="">
+  	<title>Spring eCommerce - Usuario</title>
+
+    <!-- Bootstrap core CSS -->
+	<div th:insert="~{components\Animations\bootstrapContext.html :: bootstrapLink}"></div>
+  </head>
+  
+  <body>
+	<!-- Navigation -->
+  	<div th:insert="~{components\NavBar\navbaruser.html :: navbaruser}"></div> 
+
+    <!-- Page Content -->
+    <div class="container">
+		<!-- Header -->
+   		<div th:insert="~{components\Header\headerUsuario.html :: headerUsuario}"></div>
+	
+      	<!-- Page Features -->
+      	<div th:insert="~{components\Item\itemscatalogue.html :: itemcatalogue}"></div>
+	</div>
+	
+	<!-- Footer --> 
+    <div th:insert="~{components\Footer\footer.html :: footer}"></div>
+	
+	<!-- Bootstrap core JavaScript  -->
+    <div th:insert="~{components\Animations\bootstrapContext.html :: bootstrapContext}"></div>
+  </body>
+</html>
