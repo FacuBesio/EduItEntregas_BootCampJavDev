@@ -61,26 +61,20 @@ public class ProductoController {
     	if(!producto.getImagen().equals("default.png")) {
     		List <Producto> listaProductos = productoService.findAll();
     		for(Producto p:listaProductos){
-    			if(!(producto.getImagen().equals(p.getImagen())) && !(producto.getId().equals(p.getId()))) {
-    				System.out.println("*******************************************************************");
-    				System.out.println("DISTINTA IMAGEN - DISTINTO ID - SE PUEDE BORRAR");
-    				uploadFileService.deleteImage(producto.getImagen());
-    				System.out.println("Se borro la imagen '"+producto.getImagen()+"'");
-    				System.out.println("*******************************************************************");
-    				break;
-    			} else if((producto.getImagen().equals(p.getImagen())) && !(producto.getId().equals(p.getId()))) {	
+    			if((producto.getImagen().equals(p.getImagen())) && !(producto.getId().equals(p.getId()))) {	
     				System.out.println("*******************************************************************");
     				System.out.println("IGUAL IMAGEN - DISTINTO ID - NO PUEDE BORRAR");
     				System.out.println("La imagen "+producto.getImagen()+" esta siendo utilazada por mas de un Producto:");
     				System.out.println("'"+p.getNombre()+" "+ p.getImagen()+ "' - '"+producto.getNombre()+" "+ producto.getImagen()+"'");
     				System.out.println("*******************************************************************");
     				break;
-    			} else if((producto.getImagen().equals(p.getImagen())) && (producto.getId().equals(p.getId()))) {
+    			} else {
     				System.out.println("*******************************************************************");
-    				System.out.println("IGUAL IMAGEN - IGUAL ID - SE PUEDE BORRAR");
-    				uploadFileService.deleteImage(producto.getImagen());
+    				System.out.println("DISTINTA IMAGEN - DISTINTO ID ||  IGUAL IMAGEN - IGUAL ID");
     				System.out.println("Se borro la imagen '"+producto.getImagen()+"'");
     				System.out.println("*******************************************************************");
+    				uploadFileService.deleteImage(producto.getImagen());
+    				break;
     			} 
 			};
     	}
